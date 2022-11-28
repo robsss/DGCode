@@ -1,0 +1,36 @@
+
+figure(1)
+load("Init(0.5,1.5).mat")
+plot (xv(:,1),xv(:,2),"r-",'LineWidth',3)
+hold on
+
+load("Init(1,1.5).mat")
+plot (xv(:,1),xv(:,2),"g:",'LineWidth',3)
+hold on
+
+load("Init(1.5,1.5).mat")
+plot (xv(:,1),xv(:,2),"b--",'LineWidth',3)
+hold on
+
+load("Init(3.5,1.5).mat")
+plot (xv(:,1),xv(:,2),"c-.",'LineWidth',3)
+hold on
+
+load("Init(5,1.5).mat")
+plot (xv(:,1),xv(:,2), "r-",'LineWidth',3)
+hold on
+
+set(gca,'FontName','Times New Roman','FontSize',15,'LineWidth',1);
+set(gca,'Fontname','Monospaced','FontSize',15);
+grid on
+
+linewidth = 5;
+plot(0.5,1.5,'ro','LineWidth',linewidth)
+plot(1,1.5,'go','LineWidth',linewidth)
+plot(1.5,1.5,'b.','LineWidth',linewidth)
+plot(3.5,1.5,'c.','LineWidth',linewidth)
+plot(5,1.5,'r.','LineWidth',linewidth)
+
+legend("(0.5,1.5)","(1,1.5)","(1.5,1.5)","(3.5,1.5)","5,1.5)")
+
+
